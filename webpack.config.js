@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "budle.js",
+    filename: "bundle.js",
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -29,5 +29,8 @@ module.exports = {
         use: ["style-loader", "css-loader"], // Use style-loader and css-loader
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };
