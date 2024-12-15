@@ -1,0 +1,16 @@
+.filter-btn {
+  background-color: transparent;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-btn-selected {
+  background-color: var(--filter-button-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}

@@ -1,0 +1,38 @@
+.card {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.card:hover {
+  background-color: var(--read-bg-color);
+}
+
+.card-label {
+  font-weight: 600;
+}
+.card-label-light {
+  font-weight: 400;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.card-body-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
