@@ -36,3 +36,11 @@
   text-overflow: ellipsis;
   white-space: normal;
 }
+
+.fav-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  font-size: 14px;
+}
